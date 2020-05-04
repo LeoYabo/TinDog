@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- this loads the bootstrap css library-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- highlight what you want and then click on command + forward-slash to create a comment -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"><!-- this is loads up the montserat font from google fonts-->
+  <script src="https://kit.fontawesome.com/e9de093d04.js" crossorigin="anonymous"></script> <!-- this is the script calling the fontawesome site for the apple icon and the android icon for the download buttons-->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid title-section">
+      <!-- containers contain a piece of code to style in the way one likes (see css), in this case the bootstrap container-fluid class make it so the container can change according to the screeen size of the browser-->
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- here we used the navbar class from bootstrap and modified it to be large for laptops and dark. The size ill change according to the size of the screen-->
+
+        <a class="navbar-brand" href=""> tindog </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <!-- this creates a hamburger button when the screen is small enough. it creates this button for the div with the id= "#navbarTogglerDemo02" bellow-->
+          <span class="navbar-toggler-icon"></span>
+        </button> <!-- this code was takken directly from the bootstrap site-->
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!-- this div was created to inclose the unumbered list below with the name of an id which is targeted by the button above-->
+
+          <ul class="navbar-nav ml-auto">
+            <!-- ml-auto pushes the nav items below away as far away to the left of the screen as possible-->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a> <!-- the href is filled with an id name so that if some click on it, the page will jump to that particular section.-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- bootstrap measures the length of the screen as 12 "boxes". here we tell it to create a div that is 6 boxes in lenth for screen sizes that are large. For anything smaller the div will take up the wholes screen and not just 6.-->
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <!-- the ""<i class="fab fa-apple"></i>" that was addded bellow is not to italisize something. This is the code provided by the fontawesome site for the apple icon -->
+          <button type="button" class="btn  btn-dark  btn-lg  download-button"> <i class="fab fa-apple"></i> Download </button>
+          <!-- here the button has 2 styles in class - one is for large button, and the other for a dark botton. these styles are contained in the class -->
+          <button type="button" class="btn  btn-outline-light  btn-lg  download-button"> <i class="fab fa-google-play"></i> Download </button>
+          <!--here the button also has a google play icon-->
+        </div>
+        <div class="col-lg-6  image-div">
+          <!-- creating a div coloumn that is 6 boxes in length-->
+          <img class="phone-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="features-section">
+      <div class="row">
+
+          <div class="ease-of-use col-lg-4"> <i class="fas fa-check-circle fa-4x"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+
+          <div class="clients col-lg-4"> <i class="fas fa-bullseye fa-4x"></i>
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+
+
+          <div class="work-guarantee col-lg-4"> <i class="fas fa-heart fa-4x"></i>
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+<!-- this code below is a bootstrap code to create a corousel inside the site. the data-ride is set to false bec. i don't want it to move automatically. if i did it would be set to carousel. -->
+    <div id="carouselControls" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active"> <!-- one of the carousel-items has to have also the tag 'active' meaning this is the first item seen in the carousel.-->
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+      </div>
+      <!-- the code below help the code above. it is the part of the code that creates the foward and backward arrows for the toggle of the carousel -->
+      <a class="carousel-control-prev" href="#carouseControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span> <!--this line of code, along with aria-hidden are for visually impared people who have software that reads the site. it is so the software doesn't read outloud the buttons-->
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!--<h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em> -->
+
+    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-image"src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-image"src="images/tnw.png" alt="tnw-logo">
+    <img class="press-image"src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-image"src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- this code below is a special code from bootstrap that enables a sort of universal look for pricing. It is called cards. -->
+
+<section id="pricing">
+  <h2>A Plan for Every Dog's Needs</h2>
+  <p>Simple and affordable price plans for your and your dog.</p>
+<div class="row">
+  <div class="pricing-card  col-lg-4 col-md-6"> <!-- here the card will take up 4 units in large screens and 6 units in medium screens-->
+    <div class="card">
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-outline-dark  btn-lg  btn-block"> Sign Up </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-card  col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-dark  btn-lg  btn-block">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-card  col-lg-4 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>Mastiff</h3>
+        </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark  btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+  <!-- Call to Action -->
+
+<section id="cta">
+  <div class="call-to-action">
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn  btn-dark  btn-lg  download-button"> <i class="fab fa-apple"></i> Download </button>
+    <button type="button" class="btn  btn-outline-light  btn-lg  download-button"> <i class="fab fa-google-play"></i> Download </button>
+  </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="footer-icon fab fa-twitter-square fa-2x"></i>
+    <i class="footer-icon fab fa-facebook-square fa-2x"></i>
+    <i class="footer-icon fab fa-instagram-square fa-2x"></i>
+    <i class="footer-icon fas fa-envelope-square fa-2x"></i>
+    <p>© Copyright 2020 TinDog</p>
+  </footer>
+
+
+</body>
+
+</html>

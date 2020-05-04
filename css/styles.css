@@ -1,0 +1,205 @@
+body{
+    font-family: "Montserrat";
+}
+
+#title {
+  background-color: #ff4c68;
+  color: white;/*sets color of the fonts in the title to be white*/
+
+
+}
+
+.title-section{
+  padding: 3% 15% 7%; /* this creates a padding (space from the sides of the screen) of 3% above and below and 15% for each side*/
+
+}
+
+h1{
+  font-weight: 900; /*this is to make the font to be bold, as downloaded in the beggining of the html from the fonts site*/
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-weight: 900; /*this for the titles of the features section*/
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* styling of brand name */
+
+/* creating a padding (space) between the navbar and the main page below */
+.navbar {
+  padding-bottom: 3.5rem;
+  padding-left: 0; /*there was padding (space) that was standard for navbars in bootstrap, so to align the navbar text with the rest of the body, we need to remove that padding*/
+  padding-right: 0;
+}
+
+/* specifically targets the 'tindog' text  */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* creates some padding between the different texts (links) in the navbar, so that there's more space between them */
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/*changing the style of the written words of the links in the navbar*/
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+
+/*download button styling*/
+
+.download-button {
+  margin: 5% 3% 5% 0; /*alligning the buttons to be at the same place as the title, and seperating them a bit.*/
+}
+
+.phone-image {
+  width: 50%;
+  margin-left: 20%;
+  transform: rotate(25deg); /*this command rotates the image by 20 degrees on it's axis*/
+  position: absolute; /* this position takes it out of the html flow, so that the features section can cut the image a bit from the bottom*/
+  right: 21%; /*this specifies that from the right side of the screen, the image will move 21 percent.*/
+}
+
+@media (max-width: 1028px) {
+  .phone-image {
+    position: static;
+    transform: rotate(0);
+    margin-left: 0
+  }
+  #title {
+    text-align: center;
+  }
+}
+
+/* features sections and icons */
+#features {
+  background-color: white;
+  position: relative; /*this position was given so that the features section can be on top of the cellphone image, and cut it a bit from the bottom*/
+}
+
+.features-section {
+padding: 7% 15%;
+  text-align: center; /*centers everything, including icons and pics to the center*/
+}
+
+.ease-of-use {
+  padding: 5%;
+}
+
+.clients {
+  padding: 5%;
+
+}
+
+.work-guarantee {
+  padding: 5%;
+}
+
+.fa-check-circle {
+  padding-bottom: 7%;
+  color: #ef8172;
+  }
+
+.fa-check-circle:hover {
+  color: #ff4c68;
+}
+
+.fa-bullseye {
+  padding-bottom: 7%;
+  color: #ef8172;
+}
+
+.fa-bullseye:hover {
+  color: #ff4c68;
+}
+
+.fa-heart {
+  padding-bottom: 7%;
+  color: #ef8172;
+}
+
+.fa-heart:hover {
+  color: #ff4c68;
+}
+
+/* testimonals section */
+
+#testimonials{
+
+  text-align: center;
+  background-color: #ef8172;
+  color: white; /*changes the color of the text to white*/
+  position: relative;
+
+}
+
+.carousel-item {
+    padding: 7% 15%; /*this padding was added to sqush together the testimonials, but still the arrows of the carousel are on either side of the screen and not inside this padding.*/
+}
+
+.testimonial-image {
+  width: 10%; /*makes the image smaller*/
+  border-radius: 100%; /*makes the image into a round image from a square image*/
+  margin: 10px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+  position: relative;
+}
+
+.press-image {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+
+/* cards */
+
+#pricing {
+  text-align: center;
+  padding: 100px;
+  position: relative;
+}
+
+.pricing-card {
+  padding:3% 2%
+}
+
+/* <!-- Call to Action --> */
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+  padding: 150px 20%;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+  margin: 100px 0 50px;
+}
+
+.footer-icon {
+  margin: 0 20px 20px;
+
+}
